@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Challenge2 - Cat Vote</title>
+    <link rel="stylesheet" href="main.css">
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+  </head>
+
+  <body>
+    <div class="body-container">
+      <div class="main-container"> 
+        <img src=".\Asset\CatAPILogo.png" width="386" height="256">
+        <h1>TheCatAPI - Cats as a Service, Everyday is Caturday.</h1>
+        <p>A public service API all about Cats, free to use when making your fancy new App, Website or Service.</p>
+        <h2>Take it for a test drive</h2>
+        
+        <div id="voter-container">
+          <div id="voter-nav-container">
+            <div class="formatting-div1"></div>
+            <div id="voter-nav">
+              <a>VOTE</a>
+              <a>BREEDS</a>
+              <a>IMAGES/SEARCH</a>
+              <a>FAVOURITES</a>
+              <a>UPLOAD</a>
+            </div>
+            <div class="formatting-div1"></div>
+          </div>
+          <div class="formatting-div2"></div>
+          <div id="voter-button-container">
+              <button onclick="CatpictureVote(1)" id="voter-button-love">LOVE IT</button> 
+              <button onclick="CatpictureVote(0)" id="voter-button-nope">NOPE IT</button> 
+          </div>
+          <div class="formatting-div2"></div>
+          <div id="catpicture-container">
+            <img src="" id="CatImageTag">
+          </div>
+          <div class="formatting-div1"></div>
+        </div>
+        <div class="formatting-div4"></div>
+
+        <h1>Past Happy Cats</h1>
+        <div id="UpvotedCats"></div>
+        <div class="formatting-div4"></div>
+        <h1>Past Grumpy Cats</h1>
+        <div id="DownvotedCats"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
